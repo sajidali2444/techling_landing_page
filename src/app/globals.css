@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color:rgba(19, 113, 255, 1);
+  --secondary-color:rgba(22, 32, 95, 1);
+  --background-light:rgba(231, 241, 255, 1);
+  --gradient-main:rgba(209, 229, 255, 1);
+  --gradient-secondary:rgba(253, 238, 214, 1);
+  --main-yellow:#FAAD13;
+  --text-light:#6F7172;
+}
+
+
+
+.reviewBackground{
+  background-image: url('../../public/images/reviewsection/hiringpic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
