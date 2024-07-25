@@ -16,7 +16,7 @@ const Calendar = () => {
   }, []);
 
   return (
-    <div className="bg-[url('/images/bgcal.png')]  bg-cover bg-no-repeat overflow-hidden relative">
+    <div className="bg-[url('/images/bgcal.png')] mt-20  bg-cover bg-no-repeat overflow-hidden relative">
       <div className="backdrop-brightness-50 pt-20 pb-5">
         <div className="lg:grid-cols-2 grid gap-10 z-50 w-full items-center px-5">
           <div className="z-50">

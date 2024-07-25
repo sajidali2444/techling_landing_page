@@ -19,7 +19,7 @@ const QnaSection: React.FC<QnaSectionProps> = ({ heading, qnaData }) => {
   };
 
   return (
-    <div className="max-w-[1240px] mt-40 bg-white/90 p-5 rounded-xl md:p-10 mx-auto px-5">
+    <div className="max-w-[1240px] mt-28 bg-white/90 p-5 rounded-xl md:p-10 mx-auto px-5">
       <div className="md:text-[36px] text-[25px] font-bold text-black mx-auto text-center">
         Frequently Asked <span className="text-blue-600">Questions</span>
       </div>
