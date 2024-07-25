@@ -32,9 +32,10 @@ const QnaSection: React.FC<QnaSectionProps> = ({ heading, qnaData }) => {
         {qnaData.map((item, index) => (
           <div className="max-w-[1240px] w-full " key={index}>
             <div
-              className={` flex justify-between items-center gap-4 max-w-[1240px] w-full p-3 md:p-3 ${
+              className={` flex justify-between items-center cursor-pointer gap-4 max-w-[1240px] w-full p-3 md:p-3 ${
                 activeIndex === index ? "bg-blue-600" : "bg-gray-200"
               } rounded-md `}
+              onClick={() => toggleAnswer(index)}
             >
               <p
                 className={`${
@@ -43,18 +44,13 @@ const QnaSection: React.FC<QnaSectionProps> = ({ heading, qnaData }) => {
               >
                 {item.question}
               </p>
-              <div
-                className="bg-white w-5 h-5 md:w-7 md:h-7 rounded-full overflow-hidden grid justify-center items-center text-black text-sm md:text-base flex-shrink-0 cursor-pointer"
-                onClick={() => toggleAnswer(index)}
-              >
+              <div className="bg-white w-5 h-5 md:w-7 md:h-7 rounded-full overflow-hidden grid justify-center items-center text-black text-sm md:text-base flex-shrink-0 cursor-pointer">
                 {activeIndex === index ? <TiMinus /> : <TiPlus />}
               </div>
             </div>
             <div
-              className={` text-neutral-700 text-sm md:text-base transition-all duration-300  ${
-                activeIndex === index
-                  ? "max-h-full mt-[20px] p-2"
-                  : "max-h-0 overflow-hidden"
+              className={` text-neutral-700 text-sm md:text-base transition-all duration-300 overflow-hidden  ${
+                activeIndex === index ? "max-h-[1000px] pt-10 p-2" : "max-h-0"
               }`}
             >
               {item.answer}
